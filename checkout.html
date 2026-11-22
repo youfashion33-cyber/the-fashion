@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — The Fashion</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">THE <span>FASHION</span></a>
+    <nav class="nav-links">
+      <a href="index.html" >Home</a>
+      <a href="shop.html" >Shop</a>
+      <a href="about.html" >About</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count hidden">0</span>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <a href="index.html" >Home</a>
+  <a href="shop.html" >Shop</a>
+  <a href="about.html" >About</a>
+  <a href="contact.html" >Contact</a>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Secure Checkout</span>
+    <h1>Checkout</h1>
+    <p>Complete your order</p>
+  </div>
+</section>
+
+<!-- Checkout Section -->
+<section class="checkout-section">
+  <div class="container">
+    <form id="checkoutForm">
+      <div class="checkout-grid">
+        <div>
+          <div class="checkout-form-section">
+            <h3>Billing &amp; Shipping Details</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="First name">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkEmail">Email Address</label>
+                <input type="email" id="checkEmail" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="address" required placeholder="House no., Street, Locality">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required placeholder="State">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pincode">PIN Code</label>
+                <input type="text" id="pincode" name="pincode" required placeholder="6-digit PIN" pattern="[0-9]{6}" maxlength="6">
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" value="India" readonly>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Methods -->
+          <div class="checkout-form-section payment-methods" style="margin-top: 32px;">
+            <h3>Payment Method</h3>
+            <div class="payment-option selected">
+              <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
+              <label for="razorpay">Razorpay — Cards, UPI, Net Banking, Wallets</label>
+            </div>
+            <div class="payment-option">
+              <input type="radio" name="payment" value="cashfree" id="cashfree">
+              <label for="cashfree">Cashfree — Cards, UPI, Pay Later</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4" style="width:100%;">Place Order</button>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div class="order-items"></div>
+          <div class="order-totals"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Cart Overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar">
+  <div class="cart-sidebar-header">
+    <h3>Shopping Bag <span class="cart-item-count"></span></h3>
+    <button class="close-cart">&times;</button>
+  </div>
+  <div class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Subtotal</span>
+      <span class="cart-total-amount">₹0</span>
+    </div>
+    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">THE <span>FASHION</span></a>
+        <p>Premium bespoke and ready-to-wear fashion crafted with understated luxury and modern tailoring. Rooted in New Delhi's historic garment district, delivering nationwide with distinction.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+          <li><a href="shop.html">Bestsellers</a></li>
+          <li><a href="shop.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Returns &amp; Refunds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Compliance & Business Registration Banner -->
+    <div class="footer-compliance">
+      <div class="compliance-header">
+        <span class="compliance-badge">Government Registered Enterprise</span>
+        <span class="compliance-tag">GST Registration &bull; Form GST REG-06</span>
+      </div>
+      <div class="compliance-grid">
+        <div class="compliance-item">
+          <span class="comp-label">Legal Name</span>
+          <span class="comp-value">Faizaan Khan <span class="comp-sub">(Proprietorship)</span></span>
+        </div>
+        <div class="compliance-item">
+          <span class="comp-label">Trade Name</span>
+          <span class="comp-value">The Fashion</span>
+        </div>
+        <div class="compliance-item">
+          <span class="comp-label">GSTIN / Registration</span>
+          <span class="comp-value comp-highlight">07RPHPK9244H1Z6</span>
+        </div>
+        <div class="compliance-item">
+          <span class="comp-label">Principal Place of Business</span>
+          <span class="comp-value">172, Main Tank Road, Central Delhi, New Delhi - 110005, India</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Fashion. All rights reserved.</p>
+      <div class="footer-badges">
+        <span>100% Verified Business</span>
+        <span>&bull;</span>
+        <span>Secure Payments via Razorpay &amp; Cashfree</span>
+        <span>&bull;</span>
+        <span>Pan-India Delivery</span>
+      </div>
+    </div>
+  </div></footer>
+
+<script src="js/products-extra.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — The Fashion</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">THE <span>FASHION</span></a>
+    <nav class="nav-links">
+      <a href="index.html" >Home</a>
+      <a href="shop.html" >Shop</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count hidden">0</span>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <a href="index.html" >Home</a>
+  <a href="shop.html" >Shop</a>
+  <a href="about.html" class="active">About</a>
+  <a href="contact.html" >Contact</a>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Who We Are</span>
+    <h1>Our Story</h1>
+    <p>The philosophy behind The Fashion</p>
+  </div>
+</section>
+
+<!-- About Story -->
+<section class="about-story">
+  <div class="container">
+    <div class="about-story-grid">
+      <div class="about-story-content">
+        <span class="section-label">The Beginning</span>
+        <h2>Born from a Vision of Dark Elegance</h2>
+        <p>The Fashion was founded with a singular vision: to create fashion that speaks the language of quiet confidence and sophisticated darkness. In a world of fleeting trends, we chose to build something timeless.</p>
+        <p>Our collections draw inspiration from the interplay of shadow and light, the beauty of midnight fabrics, and the allure of understated luxury. We believe the most powerful statement is often the most subtle one.</p>
+        <p>Every garment is designed in-house and crafted from premium, ethically sourced fabrics. From the initial sketch to the final stitch, our process honors the tradition of fine tailoring while embracing modern sensibilities.</p>
+      </div>
+      <div class="about-story-image">
+        <img src="assets/product-07.jpg" alt="The Fashion Heritage Quality" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="values-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Values</span>
+      <h2 class="section-title">What Drives Us</h2>
+      <p class="section-subtitle">Three pillars that define everything we create.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3>Dark by Design</h3>
+        <p>Our aesthetic embraces the depth and richness of dark palettes, creating pieces that exude power and sophistication. Each design is intentional, each shade purposeful.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Ethically Crafted</h3>
+        <p>From sustainable fabrics to fair labor practices, every decision we make considers its impact. We partner only with suppliers who share our commitment to ethical production.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Quality First</h3>
+        <p>We never compromise on materials or craftsmanship. Each piece undergoes rigorous quality checks to ensure it meets our exacting standards of excellence and durability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cart Overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar">
+  <div class="cart-sidebar-header">
+    <h3>Shopping Bag <span class="cart-item-count"></span></h3>
+    <button class="close-cart">&times;</button>
+  </div>
+  <div class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Subtotal</span>
+      <span class="cart-total-amount">₹0</span>
+    </div>
+    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">THE <span>FASHION</span></a>
+        <p>Premium bespoke and ready-to-wear fashion crafted with understated luxury and modern tailoring. Rooted in New Delhi's historic garment district, delivering nationwide with distinction.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+          <li><a href="shop.html">Bestsellers</a></li>
+          <li><a href="shop.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Returns &amp; Refunds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Compliance & Business Registration Banner -->
+    <div class="footer-compliance">
+      <div class="compliance-header">
+        <span class="compliance-badge">Government Registered Enterprise</span>
+        <span class="compliance-tag">GST Registration &bull; Form GST REG-06</span>
+      </div>
+      <div class="compliance-grid">
+        <div class="compliance-item">
+          <span class="comp-label">Legal Name</span>
+          <span class="comp-value">Faizaan Khan <span class="comp-sub">(Proprietorship)</span></span>
+        </div>
+        <div class="compliance-item">
+          <span class="comp-label">Trade Name</span>
+          <span class="comp-value">The Fashion</span>
+        </div>
+        <div class="compliance-item">
+          <span class="comp-label">GSTIN / Registration</span>
+          <span class="comp-value comp-highlight">07RPHPK9244H1Z6</span>
+        </div>
+        <div class="compliance-item">
+          <span class="comp-label">Principal Place of Business</span>
+          <span class="comp-value">172, Main Tank Road, Central Delhi, New Delhi - 110005, India</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Fashion. All rights reserved.</p>
+      <div class="footer-badges">
+        <span>100% Verified Business</span>
+        <span>&bull;</span>
+        <span>Secure Payments via Razorpay &amp; Cashfree</span>
+        <span>&bull;</span>
+        <span>Pan-India Delivery</span>
+      </div>
+    </div>
+  </div></footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
